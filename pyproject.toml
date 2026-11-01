@@ -1,0 +1,17 @@
+[build-system]
+requires = ["setuptools>=77"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "speaker-verification-claim-audit"
+version = "0.1.0"
+description = "Offline static audit of documented audio identity claims"
+requires-python = ">=3.9"
+license = "MIT"
+readme = "README.md"
+
+[project.scripts]
+speaker-verification-claim-audit = "speaker_verification_claim_audit.audit:main"
+
+[tool.setuptools]
+packages = ["speaker_verification_claim_audit", "tests"]
